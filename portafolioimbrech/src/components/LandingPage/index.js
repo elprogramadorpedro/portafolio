@@ -33,6 +33,13 @@ import linked from "../pics/linked.svg";
 import twiter from "../pics/twiter.svg";
 import pedrito from "../pics/pedrito.svg";
 import what from "../pics/what.svg";
+import { WhatIdo } from "../WhatIdo";
+import { Education } from "../Education";
+import { MyProjects } from "../MyProjects";
+import { Footer } from "../Footer";
+import {  Link } from "react-router-dom";
+
+
 
 export function LandingPage() {
   return (
@@ -46,11 +53,26 @@ export function LandingPage() {
             </DivLogoonly>
 
             <DivBoxoptions>
-              <DivQuemSou>Quem Sou</DivQuemSou>
 
-              <DivProjetos>Projetos</DivProjetos>
+           
+            
+            <Link to={'/perfil'}>
+            <DivQuemSou>Quem Sou</DivQuemSou>
+        </Link>  
 
-              <Contato>Contato</Contato>
+
+
+        <Link to={'/projetos'}>
+        <DivProjetos>Projetos</DivProjetos>
+        </Link>
+
+
+        <Link to={'/contato'}>
+        <Contato>Contato</Contato>
+        </Link>
+              
+
+
             </DivBoxoptions>
           </DivLogo>
         </DivSubHeader>
@@ -59,19 +81,54 @@ export function LandingPage() {
         <DivRedSocial>
           <DivRedSocialColums>
             <DivLink>
-              <img src={linked} alt="" />
+            <a href="https://www.linkedin.com/in/pedro-antonio-villalba-imbrech-aa61841a1/" target="blanck">
+              <img src={linked} alt=""  />     
+           </a>
+
             </DivLink>
+
+
             <DivWhat>
-              <img src={what} alt="" />
+            <a href="https://wa.me/<+5521968180170>" target="blanck">
+              <img src={what} alt=""  />     
+           </a>
             </DivWhat>
+
+
             <DivGithup>
-              <img src={github} alt="" />
+            <a href="https://github.com/elprogramadorpedro" target="blanck">
+            <img src={github} alt="" />  
+            </a>
+           
+              
+
+
             </DivGithup>
+
+
+
             <DivTwter>
+
+
+              
+              <a href="https://twitter.com/elprogramadorp1" target="blanck">
               <img src={twiter} alt="" />
+              </a>
+            
             </DivTwter>
+
+
             <DivInsta>
-              <img src={instag} alt="" />
+
+            <a href="https://www.instagram.com/imbrech_imbrech/" target="blanck">
+            <img src={instag} alt="" />
+            </a>
+              
+
+
+
+              
+
             </DivInsta>
           </DivRedSocialColums>
 
@@ -95,6 +152,11 @@ export function LandingPage() {
         </DivRedSocial>
       </DivHeader>
       <SobreMin></SobreMin>
+      <WhatIdo></WhatIdo>
+      <Education></Education>
+      <MyProjects></MyProjects>
+      <Footer></Footer>
+   
     </div>
   );
 }

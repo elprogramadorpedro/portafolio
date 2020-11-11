@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import iam from "../pics/iam.svg";
+
 export const DivSobreMinn = styled.div`
   width: 100%;
   height: 438px;
@@ -34,6 +36,19 @@ export const DivPhoto = styled.div`
   width: 305px;
   background: black;
   margin-left: 283px;
+  background-image: url(${iam});
+
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+
+
+
+
+
 `;
 
 export const DivInfoStack = styled.div`
@@ -145,4 +160,5 @@ export const ParaButton = styled.p`
   letter-spacing: -0.28px;
   text-align: center;
   color: #ffffff;
+  display:inline-block;
 `;

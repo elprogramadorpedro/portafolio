@@ -31,13 +31,14 @@ export function SobreMin() {
           <DivSomimparagrafBold>Sobre mim</DivSomimparagrafBold>
 
           <DivSomosDescription>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Olá, meu nome completo é Pedro Antonio Villalba Imbrech, sou
+            venezuelano e sou um programador full stack. Emigrei para o Brasil
+            no final de 2019 para estudar tecnologia, resolvi entrar em um
+            processo seletivo em uma empresa de educação em 2020, após uma
+            espera de 2 semanas recebi a resposta maravilhosa que havia sido
+            selecionada, em um curso para ser treinado como programador full
+            stack o tempo de carga das salas de segunda a sexta das 8h
+            às 17h, durante 6 meses.
           </DivSomosDescription>
 
           <DivStack>
@@ -67,8 +68,16 @@ export function SobreMin() {
             </DivToolsFive>
           </DivStack>
 
+          
+
           <ButtonOne>
+          <a 
+                href="https://www.dropbox.com/s/mbdkmst574s1n39/cvpedrovillalba.pdf?dl=0"
+                target="blanck" >
+                  
             <ParaButton>CV em PDF</ParaButton>
+</a>
+
           </ButtonOne>
         </DivInfoStack>
       </DivSobrePhotoParagraf>
@@ -78,3 +87,5 @@ export function SobreMin() {
   );
 }
 export default SobreMin;
+
+
